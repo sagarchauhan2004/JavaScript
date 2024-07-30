@@ -29,35 +29,48 @@ const obj2 = { 3: "c", 4: "d" };
 
 // console.log(obj4);
 
-const obj5 = {...obj1 , ...obj2}
+const obj5 = { ...obj1, ...obj2 };
 
 // console.log(obj5);
 
 const users = [
-    {
-        id : 1,
-        email : "sagar@mircosoft.com",
-    },
-    {
-        id : 1,
-        email : "sagar@mircosoft.com",
-    },
-    {
-        id : 1,
-        email : "sagar@mircosoft.com",
-    },
-    {
-        id : 1,
-        email : "sagar@mircosoft.com",
-    },
-]
+  {
+    id: 1,
+    email: "sagar@mircosoft.com",
+  },
+  {
+    id: 1,
+    email: "sagar@mircosoft.com",
+  },
+  {
+    id: 1,
+    email: "sagar@mircosoft.com",
+  },
+  {
+    id: 1,
+    email: "sagar@mircosoft.com",
+  },
+];
 
-users[1].email
-console.log(tinderUser);
+users[1].email;
+// console.log(tinderUser);
 
-console.log(Object.keys(users));
+// console.log(Object.keys(users));
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+
+const course = {
+  coursename: "js with sagar",
+  price: "999",
+  courseInstructor: "sagar",
+};
+
+course.courseInstructor;
+
+const { courseInstructor: instructor } = course;
+
+console.log(instructor);
+
