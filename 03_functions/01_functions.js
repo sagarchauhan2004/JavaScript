@@ -20,18 +20,56 @@ function addTwoNumbers(number1, number2) {
 
 // console.log(addTwoNumbers(3, null));
 
-function loginUserMessage(username) {
-  if (username === undefined) {
-    console.log("Please enter the username");
-    return
-  }
-  return `${username} just logged in`;
+// function loginUserMessage(username) {
+//   if (username === undefined) {
+//     console.log("Please enter the username");
+//     return
+//   }
+//   return `${username} just logged in`;
+// }
+
+// const fun = loginUserMessage("sagar");
+
+// console.log(fun);
+
+// console.log(loginUserMessage("raju"));
+
+// loginUserMessage();
+
+// function calculateCartPrice(...num1) {
+//   return num1;
+// }
+
+function calculateCartPrice(val1, val2, ...num1) {
+  return num1;
 }
 
-const fun = loginUserMessage("sagar");
+console.log(calculateCartPrice(200, 400, 500));
 
-console.log(fun);
+const user = {
+  username: "sagar",
+  price: 80,
+};
 
-console.log(loginUserMessage("raju"));
+function handleObject(anyobject) {
+  console.log(
+    `username is ${anyobject.username} and price is ${anyobject.price}`
+  );
+}
 
-loginUserMessage();
+// handleObject(user);
+
+// handleObject({
+//   username: "samar",
+//   price: 399,
+// });
+
+const myNewArray = [200, 300, 100, 600];
+
+function returnSecondValue(getArray) {
+  return getArray[1];
+}
+
+// console.log(returnSecondValue(myNewArray));
+
+console.log(returnSecondValue([100, 900, 400, 700]));
