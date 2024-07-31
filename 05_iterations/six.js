@@ -39,7 +39,14 @@ const books = [
 
   let userBooks = books.filter( (bk) => bk.genre === 'History')
 
-  userBooks = books.filter( (bk) => { 
-    return bk.publish >= 1995 && bk.genre === "History"
-})
-  console.log(userBooks);
+  userBooks = books.filter((bk) => {
+    return bk.publish >= 2000
+  })
+
+  userBooks.forEach(book => console.log(book.publish))
+
+
+//   userBooks = books.filter( (bk) => { 
+//     return bk.publish >= 1995 && bk.genre === "History"
+// })
+//   console.log(userBooks);
