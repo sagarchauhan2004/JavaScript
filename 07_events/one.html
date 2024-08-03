@@ -7,7 +7,7 @@
 </head>
 <body style="background-color: #414141; color:aliceblue;">
     <div>
-        <ul id = "btn" ">
+        <ul id = "btn">
             
             <li id ="1btn" style="margin-bottom: 10px;">
                 <button>click me</button>
@@ -29,6 +29,29 @@
     </div>
 </body>
 <script>
-    
+    // document.getElementById('1btn').onclick = function(){
+    //     alert("hello iam button 1")
+    // }
+
+    // document.getElementById('1btn').addEventListener('click', function(obj){
+    //     console.log(obj);
+        
+    // }, false)
+
+    // type, timestamp , defaultPrevented
+    // target , toElement , srcElement , currentTarget,
+    //clientX , clientY , screenX , screenY
+    // altkey , ctrlkey , shiftkey , keyCode
+
+    document.getElementById('btn').addEventListener('click' , function(obj){
+        console.log("buttun 1 clicked");
+        
+    } , false)
+
+    document.getElementById('2btn').addEventListener('click' , function(obj){
+        console.log("buttun 2 clicked");
+        
+    } , false )
+
 </script>
 </html>
